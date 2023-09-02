@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Layout: Grid</title>
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        gap: 10px;
+        grid-template-areas:
+          "sidebar sidebar header header header header"
+          "sidebar sidebar rectangle rectangle rectangle rectangle"
+          "sidebar sidebar rectangle2 rectangle2 rectangle2 rectangle2"
+          "sidebar sidebar rectangle2 rectangle2 rectangle2 rectangle2";
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background: lightcoral;
+      }
+
+      .header {
+        grid-area: header;
+        height: 50px;
+        background: lightcyan;
+      }
+
+      .rectangle {
+        grid-area: rectangle;
+        background: lightseagreen;
+      }
+
+      .rectangle2 {
+        grid-area: rectangle2;
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="sidebar"></div>
+      <div class="header"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle2"></div>
+    </section>
+  </body>
+</html>

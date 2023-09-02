@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <style>
+      a {
+        color: brown;
+        animation: all 2s linear;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        font-size: 2rem;
+        color: pink;
+      }
+
+      a:active {
+        color: black;
+      }
+
+      a:target {
+        border: 1px solid green;
+      }
+
+      .square {
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+        padding: 0 0 0 10px;
+        border: 2px solid green;
+      }
+
+      /* .square:hover {
+        background-color: aquamarine;
+        border-radius: 50%;
+      } */
+
+      button:active {
+        background: red;
+      }
+
+      button:hover {
+        background: yellowgreen;
+      }
+
+      button:focus {
+        background: blue;
+      }
+
+      .mb-10 {
+        margin: 0 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="google" href="https://www.google.com">Google</a>
+    <a id="facebook" href="https://www.facebook.com">Facebook</a>
+    <a id="positions" href="./positions.html">Positions</a>
+    <div class="square mb-10">
+      dasdasdasdas dasdasdasdasdas asdasdasdadas dasdasdasd
+    </div>
+    <div class="square">
+      dasdasdasdas dasdasdasdasdas asdasdasdadas dasdasdasd
+    </div>
+    <button>Click</button>
+  </body>
+</html>
